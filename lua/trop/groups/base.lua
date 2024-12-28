@@ -9,7 +9,7 @@ function M.get(c, opts)
 
 		Comment = { fg = c.comment, style = opts.styles.comments }, -- any comment
 		ColorColumn = { bg = c.black }, -- used for the columns set with 'colorcolumn'
-		Conceal = { fg = c.fg_dark2 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
+		Conceal = { fg = c.dark2 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
 		Cursor = { fg = c.bg, bg = c.fg }, -- character under the cursor
 		lCursor = { fg = c.bg, bg = c.fg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
 		CursorIM = { fg = c.bg, bg = c.fg }, -- like Cursor, but used when in IME mode |CursorIM|
@@ -37,7 +37,7 @@ function M.get(c, opts)
 		ModeMsg = { fg = c.fg_dark, bold = true }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		MsgArea = { fg = c.fg_dark }, -- Area for messages and cmdline
 		MoreMsg = { fg = c.blue }, -- |more-prompt|
-		NonText = { fg = c.fg_dark1 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+		NonText = { fg = c.dark1 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 		Normal = { fg = c.fg, bg = opts.transparent and c.none or c.bg }, -- normal text
 		NormalNC = { fg = c.fg, bg = opts.transparent and c.none or opts.dim_inactive and c.bg_dark or c.bg }, -- normal text in non-current windows
 		NormalSB = { fg = c.fg_sidebar, bg = c.bg_sidebar }, -- normal text in sidebar
@@ -55,7 +55,7 @@ function M.get(c, opts)
 		Search = { bg = c.bg_search, fg = c.fg }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
 		IncSearch = { bg = c.orange, fg = c.black }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
 		CurSearch = "IncSearch",
-		SpecialKey = { fg = c.fg_dark1 }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
+		SpecialKey = { fg = c.dark1 }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
 		SpellBad = { sp = c.error, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
 		SpellCap = { sp = c.warning, undercurl = true }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 		SpellLocal = { sp = c.info, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
@@ -99,7 +99,7 @@ function M.get(c, opts)
 		htmlH1 = { fg = c.magenta, bold = true },
 		htmlH2 = { fg = c.blue, bold = true },
 		qfFileName = { fg = c.blue },
-		qfLineNr = { fg = c.fg_dark2 },
+		qfLineNr = { fg = c.dark2 },
 
 		-- These groups are for the native LSP client. Some other LSP clients may
 		-- use these groups, or use their own.
@@ -108,7 +108,7 @@ function M.get(c, opts)
 		LspReferenceWrite = { bg = c.fg_gutter }, -- used for highlighting "write" references
 		LspSignatureActiveParameter = { bg = Util.blend_bg(c.bg_visual, 0.4), bold = true },
 		LspCodeLens = { fg = c.comment },
-		LspInlayHint = { bg = Util.blend_bg(c.blue, 0.1), fg = c.fg_dark1 },
+		LspInlayHint = { bg = Util.blend_bg(c.blue, 0.1), fg = c.dark1 },
 		LspInfoBorder = { fg = c.border_highlight, bg = c.bg_float },
 
 		-- diagnostics

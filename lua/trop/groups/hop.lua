@@ -11,7 +11,7 @@ function M.get(c, opts)
     HopNextKey = { fg = c.aqua, bold = true },
     HopNextKey1 = { fg = c.accent, bold = true },
     HopNextKey2 = { fg = Util.blend_bg(c.accent, 0.6) },
-    HopUnmatched = { fg = c.fg_dark1 },
+    HopUnmatched = { fg = c.dark1 },
   }
 end
 

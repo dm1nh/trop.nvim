@@ -10,7 +10,7 @@ function M.get(c)
   return {
     MiniTablineCurrent         = { fg = c.fg, bg = c.fg_gutter },
     MiniTablineFill            = { bg = c.black },
-    MiniTablineHidden          = { fg = c.fg_dark2, bg = c.bg_statusline },
+    MiniTablineHidden          = { fg = c.dark2, bg = c.bg_statusline },
     MiniTablineModifiedCurrent = { fg = c.warning, bg = c.fg_gutter },
     MiniTablineModifiedHidden  = { bg = c.bg_statusline, fg = Util.blend_bg(c.warning, 0.7) },
     MiniTablineModifiedVisible = { fg = c.warning, bg = c.bg_statusline },

@@ -38,12 +38,12 @@ function M.setup(opts)
 		add = colors.green,
 		delete = colors.red,
 		change = colors.orange,
-		ignore = colors.fg_dark1,
+		ignore = colors.dark1,
 	}
 
 	colors.black = Util.blend_bg(colors.bg, 0.8, "#000000")
 	colors.border_highlight = colors.accent
-	colors.border = colors.fg_dark2
+	colors.border = colors.dark2
 
 	-- Popups and Statusline
 	colors.bg_popup = colors.bg_dark
