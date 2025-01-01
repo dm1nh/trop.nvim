@@ -15,9 +15,9 @@ local ret = {
   green = "#a7c080",
   aqua = "#83c092",
   blue = "#7ba6d2",
-  purple = "#ad85d7",
-  magenta = "#d6a0d1",
-  terminal_black = "#393e43",
-  comment = "#626a60",
+  purple = "#ac8ed9",
+  magenta = "#d699b6",
+  terminal_black = "#444a4f",
+  comment = "#585f56",
 }
 return ret
