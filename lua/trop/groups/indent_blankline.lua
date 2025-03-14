@@ -10,6 +10,7 @@ function M.get(c, opts)
     IndentBlanklineContextChar = { fg = c.accent, nocombine = true },
     IblIndent                  = { fg = c.black, nocombine = true },
     IblScope                   = { fg = c.accent, nocombine = true },
+    IblWhitespace = { link = "NonText"}
   }
 end
 

@@ -41,7 +41,7 @@ function M.setup(opts)
     ignore = colors.dark1,
   }
 
-  colors.black = Util.blend_bg(colors.bg, 0.8, "#000000")
+  colors.black = Util.blend_bg(colors.fg_gutter, 0.65, "#000000")
   colors.border_highlight = colors.accent
   colors.border = colors.dark2
 
